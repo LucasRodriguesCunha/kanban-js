@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Javascript -->
+    <script src="script.js" defer></script>
+
+    <!-- Estilo -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Kanban</title>
+</head>
+
+<body>
+    <h1>Kanban</h1>
+    <form id="add-tarefa">
+        <p>Crie uma nova tarefa:</p>
+        <input type="text" placeholder="Digite o título...">
+        <button type="submit">Criar</button>
+    </form>
+    <div class="kanban">
+        <div class="coluna">
+            <h2>Para fazer</h2>
+            <ul class="tarefas" id="to-do">
+                <li draggable="true">Tarefa 1</li>
+                <li draggable="true">Tarefa 2</li>
+            </ul>
+        </div>
+        <div class="coluna">
+            <h2>Fazendo</h2>
+            <ul class="tarefas" id="fazendo">
+                <li draggable="true">Tarefa 3</li>
+                <li draggable="true">Tarefa 4</li>
+            </ul>
+        </div>
+        <div class="coluna">
+            <h2>Prontas</h2>
+            <ul class="tarefas" id="feita">
+                <li draggable="true">Tarefa 5</li>
+                <li draggable="true">Tarefa 6</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
